@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --clr-1:white;
+    --clr-2:#92a8d1;
+}
+
+.container{
+    font-family: 'Mulish', sans-serif !important;
+    /* border: 2px solid black; */
+    margin-top:2rem ;
+    height: 780px;
+    background-color: var(--clr-1);
+}
+
+.bmi-calculator-top{
+    display: flex;
+}
+.bmi-calculator-top img{
+    width: 200px;
+}
+.text{
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+.box{
+    background-color:#e2e2e2;
+    /* border: 2px solid black; */
+    height: 550px;
+    margin: 1rem;
+    padding: 1rem 0;
+    /* display: flex; */
+    text-align: center;
+}
+
+.gender{
+    margin: 1rem;
+}
+.agee{
+    margin: 1rem;
+}
+.heightt{
+    margin: 1rem;
+}
+.weightt{
+    margin: 1rem;
+}
+
+    #calculate-btn{ 
+    margin: 1rem;
+    outline: none;
+    border: none;
+    color: #ffff;
+    border-radius: 2rem;
+    padding: 3px;
+    background: black;
+    transform: 0.4 all linear;
+}
+#calculate-btn:hover{
+    background: rgb(34, 33, 33);
+}
+#result{
+    font-family:  sans-serif;
+color: red;
+}
+/* about */
+.about-page{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    margin: 2rem 2rem;
+}
+.secondary-heading{
+color: red;
+}
+.tap-to-calculate-btn{
+    width: 4rem;
+    padding: 6px;
+    background-color: red;
+    color: black;
+    border-radius: 3rem;
+   
+  
+}
+.tap-to-calculate{
+    text-align: center;
+    margin-top:5rem ;
+}
+.tap-to-calculate a{
+text-decoration: none;
+}
+.tap-to-calculate a:hover{
+    color: wheat;
+/* background-color: rgb(185, 22, 22); */
+cursor: pointer;
+}
+.calculate-formula-box{
+/* border: 2px solid black; */
+width: 500px;
+background-color: black;
+color: wheat;
+}
+
+.bmi-range{
+    display: flex;
+    margin-top: 140px;
+     /* border: 2px solid black; */
+    width: 100%;
+    padding: 40px;
+    background-color: #e2e2e2;
+}
+ .right {
+    padding-left: 200px;
+}
+.right p{
+width: 500px;
+} 
+.risks{
+    display: flex;
+    margin-top: 100px;
+}
+.overweight-risks{
+    /* margin: 4rem 2rem; */
+    margin-left: 3rem;
+}
+/* .vl {
+    border-left: 6px solid red;
+    height: 750px;
+  } */
+
+  .overweight-risks p{
+    width: 200px;
+  }
+  .overweight-risks li{
+    margin-bottom: 20px;
+    width: 700px;
+  }
+.overweight-image{
+    width: 300px;
+    margin-top: 65px;
+}
+.underweight-risks{
+    /* margin: 4rem 2rem; */
+    margin-left: 3rem;
+    display: flex;
+    margin-top:75px;
+}
+
+  .underweight-risks p{
+    width: 500px;
+  }
+  .underweight-risks li{
+    margin-bottom: 20px;
+    width: 700px;
+  }
+.underweight-image{
+    width: 100%;
+    margin-top: 25px;
+    margin-left: 140px;
+}
+.underweight-desc{
+margin-left: 200px;
+}
+/* mediaqueries */
+@media screen and (max-width:768px) {
+    .box{
+        height: 640px;
+    }
+    #result{
+        text-align: center;
+    }
+    .bmi-calculator-top img{
+        width: 140px;
+    }
+    .calculate-formula-box{
+        width: 300px;
+        }
+        .bmi-range{
+            flex-direction: column;
+        }
+        .right {
+            padding-left: 0;
+        }
+        .right p{
+            width: auto;
+            
+            } 
+            .secondary-heading{
+font-size: 1.7rem;
+            }
+            .bmi-range{
+                margin-top: 50px;
+            }
+            .tap-to-calculate{
+                margin-top: 30px;
+            }
+            .risks {
+                /* flex-direction: column; */
+               width: 300px;
+               margin: 5px;
+               margin-left: -40px;
+            }
+            .overweight-risks li{
+                width: 300px;
+              }
+            .overweight-risks h2{
+                width:300px;
+              }
+              
+            .overweight-risks p{
+                width: 300px;
+              }
+              .overweight-image{
+                display:none;
+              }
+              .underweight-desc{
+                margin-left: -140px;
+              }
+            .underweight-risks li{
+                width: 300px;
+              }
+            .underweight-risks h2{
+                width:300px;
+              }
+              
+            .underweight-risks p{
+                width: 300px;
+              }
+
+              .underweight-image{
+                width: 0;
+              }
+            
+}
+@media screen and (max-width:1030px) {
+
+    .right p{
+     width: auto;   
+    }
+
+
+}

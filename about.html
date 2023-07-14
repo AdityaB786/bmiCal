@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger sticky-top">
+      <a class="navbar-brand" href="#">Calculator.net</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">HOME </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              ABOUT
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#intro">Introduction</a>
+              <a class="dropdown-item" href="#bmi-range">BMI RANGE</a>
+              <a class="dropdown-item" href="#overweight-risks">Overweight-risks</a>
+              <a class="dropdown-item" href="#underweight-risks">Underweight-risks</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- body -->
+    <div class="about-page">
+      <div class="intro" id="intro">
+        <h1 class="secondary-heading">
+          Introduction to the body mass index (BMI)
+        </h1>
+        <p>
+          Body Mass Index (BMI) is widely used as an indicator of body fat
+          content. Your weight alone is not sufficient to establish if you are
+          in a healthy weight range. For example, a tall but slender person can
+          weigh more than a short but plump individual. But the former may enjoy
+          better health as long as their weight is suitable for their height.
+          The ideal weight is also likely to differ for men and women of similar
+          heights.
+        </p>
+        <p>
+          How then do you know whether you fall in the healthy weight range or
+          not? Your BMI solves this confusion. It correlates your weight with
+          your height and evaluates whether your weight is appropriate for your
+          stature. You can use a BMI calculator to find out your BMI.
+        </p>
+        <p>
+          Although not an exact measurement of body fat percentage, in most
+          cases, BMI is a reliable tool for establishing risk levels for
+          illnesses, especially ailments related to excess body fat. Many
+          healthcare professionals use BMI to determine effective doses for
+          medicines. Often people with a higher BMI need higher doses. Hence, it
+          is crucial to be aware of your BMI to ensure your overall wellness.
+        </p>
+      </div>
+      <div class="calculate-formula">
+        <h1 class="secondary-heading">How to calculate BMI</h1>
+        <p>
+          If you want to calculate your BMI, you have to find out your weight
+          and height first. Once you know these values, you can arrive at the
+          result by following the two steps mentioned below:
+        </p>
+        <div class="calculate-formula-box">
+          ① Multiply your height by itself (height X height).
+          <br />
+          ② Divide your weight by the answer you get in the first step
+        </div>
+        <div class="tap-to-calculate">
+          <a href="index.html" class="tap-to-calculate-btn"
+            >Tap to Calculate BMI</a
+          >
+        </div>
+        <!-- flexbox for bmi in children and adults -->
+        <div class="bmi-range" id="bmi-range">
+          <div class="left">
+            <h2 class="secondary-heading">How to calculate BMI</h2>
+            <p>
+              For adults over the age of 20 years, BMI values are grouped into
+              the following weight status categories:
+            </p>
+            <table class="table table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">BMI</th>
+                  <th scope="col">WEIGHT STATUS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Below 18.5</td>
+                  <td>UNDERWEIGHT</td>
+                </tr>
+                <tr>
+                  <td>18.5–24.9</td>
+                  <td>NORMAL WEIGHT</td>
+                </tr>
+                <tr>
+                  <td>25–29.9</td>
+                  <td>OVERWEIGHT</td>
+                </tr>
+                <tr>
+                  <td>30–35</td>
+                  <td>OBESE</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>
+              The range remains the same for males and females. There is no
+              separate BMI calculator for men and women.
+            </p>
+          </div>
+          <div class="right">
+            <h2 class="secondary-heading">BMI for Children</h2>
+            <p>
+              In children, body fat content changes with age. It is also normal
+              for teenage girls to have more body fat than boys. BMI calculation
+              for children follows the sameformula as adults. But the value is
+              then plotted on standard gender-specific BMI-for-age percentile
+              charts for children. It determines the child's weight status
+              compared to children of the same gender and age.
+            </p>
+            <p>
+              <strong>
+                For example, a 25th percentile BMI for a 6-year old female child
+                would indicate that the child's weight is higher than 25% of
+                girls aged 6.</strong
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="risks">
+        <!-- <div class="vl"></div> -->
+        <div class="overweight-risks" id="overweight-risks">
+            <hr>
+        <h2 class="secondary-heading">
+          What are the health risks related to being overweight?
+        </h2>
+        <p><strong>
+          Excess weight brings with it countless health complications, some of
+          which can be fatal. A higher BMI than average (over 25) is associated
+          with increased risks for diseases like:
+       </strong> </p>
+        <ul>
+            <li>Type 2 diabetes</li>
+            <li>Heart conditions</li>
+            <li>Higher levels of LDL cholesterol and lower count of HDL cholesterol in the blood, increasing chances of coronary artery diseases and heart attacks</li>
+            <li>High triglycerides            </li>
+            <li>Stroke</li>
+            <li>High blood pressure</li>
+            <li>Gall bladder-related complications</li>
+            <li>Insulin resistance</li>
+            <li>Gout</li>
+            <li>Stress incontinence or urge to urinate frequently</li>
+            <li>Clinical depression and other mental health issues</li>
+            <li>Certain types of cancer (breast, colon, endometrial, gall bladder, kidney, liver)            </li>
+            <li>Skin health problems like skin tags, darkening of the skin</li>
+        </ul>
+      </div>
+      <img class="overweight-image" src="/JS-PROJECTS/bmiCalculator/img/obese.svg" alt="">
+    </div>
+    </div>
+    <!-- //underweight-risks -->
+    <div class="underweight-risks" id="underweight-risks">
+        <img class="underweight-image" src="/JS-PROJECTS/bmiCalculator/img/slim.svg" alt="">
+        <div class="underweight-desc">
+    <h2 class="secondary-heading">
+        What are the risks of being underweight?
+    </h2>
+    <p><strong>
+        Having a BMI below 18.5 is also fraught with health risks, such as the ones listed below:
+   </strong> </p>
+    <ul>
+       <li> Vitamin deficiencies
+       <li> Anaemia (low red blood cell count and hence reduced capacity to carry oxygen)
+       <li> Diminished immunity or the ability to ward off infections
+       <li> Osteoporosis or brittle bones that break easily
+       <li> Malnutrition
+       <li> Developmental delays in children
+       <li> Hormonal imbalances
+       <li> Disruptions in women's menstrual cycle causing complications in conception
+    </ul>
+    <hr>
+  </div>
+  <!-- <div class="vl2"></div> -->
+    </div>
+</div>
+  </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://kit.fontawesome.com/d8654555c8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
